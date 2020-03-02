@@ -10,5 +10,5 @@ docker build -t ${IMAGE}:${GIT_VERSION} .
 docker tag ${IMAGE}:${GIT_VERSION} ${IMAGE}:latest
 
 # Login and push image to DH.
-echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
+echo "${DOCKER_PASSWORD}" | docker login -u frankqux --password-stdin
 docker push ${IMAGE}:${GIT_VERSION}
