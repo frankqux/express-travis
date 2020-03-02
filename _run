@@ -1,0 +1,1 @@
+docker build -t dockerized-express:v1 . && docker run -p 3000:3000 dockerized-express:v1
